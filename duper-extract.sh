@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 export PATH=$PATH:/Users/runner/Library/Android/sdk/build-tools/29.0.0/
 sleep 120
 
