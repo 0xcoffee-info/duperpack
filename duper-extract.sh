@@ -17,6 +17,8 @@ sleep 120
 /Users/runner/Library/Android/sdk/platform-tools/adb shell am start -n com.whatsapp/.Main && sleep 120
 /Users/runner/Library/Android/sdk/platform-tools/adb pull /data/data/com.whatsapp/files/decompressed/libs.spo/ . && zip -r libs.spo.arm64.zip libs.spo/
 rm -rf ./libs.spo
+/Users/runner/Library/Android/sdk/platform-tools/adb pull /data/data/com.whatsapp/ . && zip -r com.whatsapp.zip com.whatsapp/
+rm -rf ./com.whatsapp
 /Users/runner/Library/Android/sdk/platform-tools/adb shell rm -rf /data/data/com.whatsapp
 /Users/runner/Library/Android/sdk/platform-tools/adb uninstall com.whatsapp
 
