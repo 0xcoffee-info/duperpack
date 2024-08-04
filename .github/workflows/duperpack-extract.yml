@@ -54,6 +54,12 @@ jobs:
           name: 'WhatsApp-Arm64-libraries'
           path: libs.spo.arm64.zip
           retention-days: 1
+      - name: 'upload apk files'
+        uses: actions/upload-artifacts@v3
+        with:
+          name: 'whatsapp-apk-files'
+          path: com.whatsapp.zip
+          retention-days: 1
 
       - name: 'Upload x86 Artifact'
         uses: actions/upload-artifact@v3
